@@ -1,0 +1,29 @@
+{
+  "name": "Réve do Parfum",
+  "short_name": "Réve Parfum",
+  "description": "Tienda online de perfumes originales de alta gama",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#d4af37",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192.png?text=Reve",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512.png?text=Reve",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "lifestyle"],
+  "lang": "es-CO",
+  "dir": "ltr",
+  "scope": "./",
+  "prefer_related_applications": false
+}

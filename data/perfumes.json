@@ -1,0 +1,202 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2024-01-01",
+  "perfumes": [
+    {
+      "id": 1,
+      "name": "Creed Aventus",
+      "brand": "Creed",
+      "price": 115,
+      "category": "Hombre",
+      "type": "Nicho",
+      "image": "images/aventus.png",
+      "occasion": ["Oficina", "Cita", "Evento Formal", "Noche"],
+      "description": "Una sinfonía de poder triunfante. Aventus celebra la fuerza, el éxito y la внушsegunda naturaleza del hombre moderno. Notas de salida: manzana verde, bergamota, pino negro. Notas de corazón: rosa, patchouli, jazmín. Notas de fondo: almizcle, roble, amber.",
+      "accords": [
+        { "name": "Afrutado", "value": 90, "color": "#e3ad3b" },
+        { "name": "Dulce", "value": 80, "color": "#d26071" },
+        { "name": "Fresh", "value": 75, "color": "#7cb8a8" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Parfums de Marly Herod",
+      "brand": "Parfums de Marly",
+      "price": 110,
+      "category": "Hombre",
+      "type": "Nicho",
+      "image": "images/herod.png",
+      "occasion": ["Evento Formal", "Noche"],
+      "description": "La personificación del refinamiento oscuro. Un perfume oriental exquisito con notas de tabaco, vainilla y spices. Notas de salida: корица, кардамон. Notas de corazón: tabaco, iris. Notas de fondo: Vainilla, pachulí, cashmere.",
+      "accords": [
+        { "name": "Tabaco", "value": 95, "color": "#b68b44" },
+        { "name": "Vainilla", "value": 90, "color": "#eddd8f" },
+        { "name": "Amaderado", "value": 85, "color": "#6a5c48" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Xerjoff Naxos",
+      "brand": "Xerjoff",
+      "price": 120,
+      "category": "Hombre",
+      "type": "Nicho",
+      "image": "images/naxos.png",
+      "occasion": ["Oficina", "Evento Formal"],
+      "description": "El alma vibrante del Mediterráneo encapsulada. Una declaración de lujo italiano con notas florales y ambaradas. Notas de salida: bergamota, lemon, lavender. Notas de cuerpo: jasmine, ylang-ylang. Notas de fondo: tonka bean, vanilla, amber.",
+      "accords": [
+        { "name": "Miel", "value": 95, "color": "#ffb923" },
+        { "name": "Dulce", "value": 85, "color": "#d26071" },
+        { "name": "Floral", "value": 80, "color": "#f1ead6" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dior Sauvage Elixir",
+      "brand": "Dior",
+      "price": 90,
+      "category": "Hombre",
+      "type": "Diseñador",
+      "image": "images/sauvage.png",
+      "occasion": ["Oficina", "Noche"],
+      "description": "Una concentración extrema y embriagadora. La versión más concentrada del icónico Sauvage. Notas de salida: bergamota, pimienta. Notas de corazón: lavanda, nuez moscada. Notas de fondo: amberwood, vetiver.",
+      "accords": [
+        { "name": "Cálido Especiado", "value": 100, "color": "#a5452d" },
+        { "name": "Aromático", "value": 85, "color": "#748a60" },
+        { "name": "Amaderado", "value": 80, "color": "#6a5c48" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Acqua di Gio Profondo",
+      "brand": "Giorgio Armani",
+      "price": 100,
+      "category": "Hombre",
+      "type": "Diseñador",
+      "image": "images/adg_profondo.png",
+      "occasion": ["Oficina", "Cita", "Diario"],
+      "description": "Una inmersión profunda en el océano profundo. La versión más oscura y aromática de Acqua di Gio. Notas de salida: marine notes, citrus. Notas de corazón: rosemary, pistachio. Notas de fondo: patchouli, amber.",
+      "accords": [
+        { "name": "Aromático", "value": 90, "color": "#748a60" },
+        { "name": "Marino", "value": 85, "color": "#377484" },
+        { "name": "Amaderado", "value": 75, "color": "#6a5c48" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bleu de Chanel Parfum",
+      "brand": "Chanel",
+      "price": 90,
+      "category": "Hombre",
+      "type": "Diseñador",
+      "image": "images/bleu_chanel.png",
+      "occasion": ["Oficina", "Evento Formal", "Noche"],
+      "description": "El elogio absoluto a la libertad y elegancia masculina. La versión más sofisticada de Bleu. Notas de salida: citrus, pepper. Notas de corazón: lavender, mint. Notas de fondo: sandalwood, cedar.",
+      "accords": [
+        { "name": "Amaderado", "value": 95, "color": "#6a5c48" },
+        { "name": "Cítrico", "value": 80, "color": "#c8df52" },
+        { "name": "Aromático", "value": 75, "color": "#748a60" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Baccarat Rouge 540",
+      "brand": "Maison Francis Kurkdjian",
+      "price": 110,
+      "category": "Mujer",
+      "type": "Nicho",
+      "image": "images/baccarat.png",
+      "occasion": ["Evento Formal", "Noche"],
+      "description": "Una alquimia poética y una firma olfativa gráfica. El perfume más icónico de la casa. Notas de salida: jasmine, saffron. Notas de cuerpo: amber, cedar. Notas de fondo: vanilla, musk.",
+      "accords": [
+        { "name": "Ámbar", "value": 100, "color": "#e8a939" },
+        { "name": "Almendra", "value": 85, "color": "#e3ad3b" },
+        { "name": "Floral", "value": 80, "color": "#f1ead6" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Delina Exclusif",
+      "brand": "Parfums de Marly",
+      "price": 115,
+      "category": "Mujer",
+      "type": "Nicho",
+      "image": "images/delina.png",
+      "occasion": ["Cita", "Evento Formal"],
+      "description": "La encarnación de una feminidad embriagadora y misteriosa. Una versión más intensa de Delina. Notas de salida: pear, lychee. Notas de cuerpo: rose, iris. Notas de fondo: vanilla, tonka, musk.",
+      "accords": [
+        { "name": "Rosa", "value": 95, "color": "#d26071" },
+        { "name": "Vainilla", "value": 90, "color": "#eddd8f" },
+        { "name": "Floral", "value": 85, "color": "#f1ead6" }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Amouage Guidance",
+      "brand": "Amouage",
+      "price": 120,
+      "category": "Mujer",
+      "type": "Nicho",
+      "image": "images/guidance.png",
+      "occasion": ["Evento Formal", "Noche"],
+      "description": "Una obra de arte abstracta que narra una fragilidad poderosa. Notas de salida: apricot, peach. Notas de cuerpo: rose, jasmine. Notas de fondo: sandalwood, amber, musk.",
+      "accords": [
+        { "name": "Afrutado", "value": 95, "color": "#e3ad3b" },
+        { "name": "Nuez", "value": 90, "color": "#cab8b8" },
+        { "name": "Floral", "value": 85, "color": "#f1ead6" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "YSL Libre Intense",
+      "brand": "Yves Saint Laurent",
+      "price": 105,
+      "category": "Mujer",
+      "type": "Diseñador",
+      "image": "images/libre_intense.png",
+      "occasion": ["Oficina", "Noche"],
+      "description": "El grito perfumado de libertad más audaz. Una versión más身上intensa y bold de Libre. Notas de salida: bergamot, orange blossom. Notas de cuerpo: jasmine, lavender. Notas de fondo: vanilla, amber.",
+      "accords": [
+        { "name": "Vainilla", "value": 95, "color": "#eddd8f" },
+        { "name": "Flores Blancas", "value": 90, "color": "#f1ead6" },
+        { "name": "Ámbar", "value": 80, "color": "#e8a939" }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Chanel Coco Mademoiselle",
+      "brand": "Chanel",
+      "price": 100,
+      "category": "Mujer",
+      "type": "Diseñador",
+      "image": "images/coco_mademoiselle.png",
+      "occasion": ["Oficina", "Cita", "Diario"],
+      "description": "El brillo innegable de la mujer independiente. Un clásico atemporal de Chanel. Notas de salida: orange, bergamot, rose. Notas de cuerpo: jasmine, ylang-ylang. Notas de fondo: patchouli, vanilla, musk.",
+      "accords": [
+        { "name": "Cítrico", "value": 90, "color": "#c8df52" },
+        { "name": "Pachulí", "value": 85, "color": "#748a60" },
+        { "name": "Floral", "value": 80, "color": "#f1ead6" }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Prada Paradoxe",
+      "brand": "Prada",
+      "price": 110,
+      "category": "Mujer",
+      "type": "Diseñador",
+      "image": "images/paradoxe.png",
+      "occasion": ["Oficina", "Evento Formal"],
+      "description": "Una nueva floral amber para la mujer Prada. La esencia de la paradoja: contemporánea y atemporal. Notas de salida: bergamot, orange. Notas de cuerpo: jasmine, osmanthus. Notas de fondo: vanilla, amber, cedar.",
+      "accords": [
+        { "name": "Floral", "value": 95, "color": "#f1ead6" },
+        { "name": "Ámbar", "value": 85, "color": "#e8a939" },
+        { "name": "Dulce", "value": 75, "color": "#d26071" }
+      ]
+    }
+  ],
+  "categories": ["Hombre", "Mujer", "Unisex"],
+  "types": ["Diseñador", "Nicho"],
+  "accords": ["Amaderado", "Ámbar", "Aromático", "Cítrico", "Dulce", "Floral", "Frutal", "Gourmand", "Tabaco", "Vainilla"],
+  "occasions": ["Oficina", "Cita", "Evento Formal", "Diario", "Noche"]
+}
