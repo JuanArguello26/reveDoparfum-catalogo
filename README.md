@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![React](https://img.shields.io/badge/-Sitio_Estático-blue?style=flat&logo=)
+![Static Site](https://img.shields.io/badge/-Sitio_Estático-blue?style=flat&logo=)
 ![Vercel](https://img.shields.io/badge/-Desplegado_Vercel-black?style=flat&logo=vercel)
 ![HTML5](https://img.shields.io/badge-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
@@ -22,7 +22,7 @@ Bienvenido al catálogo digital de **Réve do Parfum**. Este proyecto es un siti
 
 ### ¿Por qué un catálogo estático?
 
-- ⚡ **Velocidad极致** - Carga instantánea sin espera de servidor
+- ⚡ **Velocidad** - Carga instantánea sin espera de servidor
 - 💰 **Costo $0** - Despliegue gratuito en Vercel
 - 🔒 **Seguridad** - Sin base de datos, sin vulnerabilidades
 - 📱 **Responsive** - Funciona perfecto en cualquier dispositivo
@@ -41,7 +41,7 @@ Bienvenido al catálogo digital de **Réve do Parfum**. Este proyecto es un siti
 | 🎭 **Módulos Especiales** | Catálogo principal, Decants, Esiencias |
 | ✨ **Animaciones Suaves** | Experiencia de usuario mejorada con AOS |
 | 🔎 **Búsqueda en Tiempo Real** | Encuentra perfumes rápidamente |
-| 🌐 **SEO Optimizado** | Meta tags para搜索引擎 |
+| 🌐 **SEO Optimizado** | Meta tags para buscadores |
 | 📲 **PWA Ready** | Installable como app móvil |
 
 ---
@@ -52,12 +52,12 @@ Bienvenido al catálogo digital de **Réve do Parfum**. Este proyecto es un siti
 reveDoparfum-catalogo/
 ├── index.html           # Página principal
 ├── css/
-│   └── styles.css      # Estilos optimizados (600+ líneas)
+│   └── styles.css      # Estilos optimizados
 ├── js/
-│   └── app.js         # Lógica del catálogo (400+ líneas)
+│   └── app.js         # Lógica del catálogo
 ├── data/
 │   └── perfumes.json  # Base de datos de perfumes
-├── images/             # 12 imágenes de productos
+├── images/             # Imágenes de productos
 ├── manifest.json      # Configuración PWA
 └── README.md          # Este archivo
 ```
@@ -121,15 +121,13 @@ npm i -g vercel
 
 # Despliega
 vercel
-
-# Sigue las instrucciones en pantalla
 ```
 
 ### Método 3: Drag & Drop
 
 1. Ve a [vercel.com/drop](https://vercel.com/drop)
 2. Arrastra la carpeta del proyecto
-3. ¡Listo! Tu sitio estará live en segundos
+3. ¡Listo!
 
 ---
 
@@ -161,23 +159,7 @@ vercel
 ### Agregar Imágenes
 
 1. Coloca tu imagen en la carpeta `images/`
-2. Nombra el archivo de forma descriptiva: `yves-saint-laurent-libre.png`
-3. Actualiza el campo `image` en el JSON
-
-### Campos Disponibles
-
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| `id` | number | Identificador único |
-| `name` | string | Nombre del perfume |
-| `brand` | string | Marca/Laboratorio |
-| `price` | number | Precio en miles COP |
-| `category` | string | Hombre/Mujer/Unisex |
-| `type` | string | Diseñador/Nicho |
-| `image` | string | Ruta a la imagen |
-| `occasion` | array | Occasiones de uso |
-| `description` | string | Descripción detallada |
-| `accords` | array | Notas olfativas |
+2. Actualiza el campo `image` en el JSON
 
 ---
 
@@ -191,7 +173,6 @@ Edita `css/styles.css`:
 :root {
   --primary-color: #d4af37;  /* Dorado */
   --bg-color: #121212;       /* Negro oscuro */
-  --text-main: #e0e0e0;      /* Texto claro */
 }
 ```
 
@@ -203,51 +184,15 @@ Edita `js/app.js`:
 const WHATSAPP_NUMBER = '573151413120';
 ```
 
-### Título y Meta
-
-Edita `index.html`:
-
-```html
-<title>Réve do Parfum | Tu Título</title>
-<meta name="description" content="Tu descripción...">
-```
-
----
-
-## 📱 Screenshots
-
-| Mobile | Desktop |
-|--------|---------|
-| ![Mobile](https://via.placeholder.com/300x600?text=Mobile+View) | ![Desktop](https://via.placeholder.com/800x400?text=Desktop+View) |
-
 ---
 
 ## 🛠️ Tecnologías
 
 - **HTML5** - Estructura semántica
 - **CSS3** - Estilos modernos con variables
-- **Vanilla JS** - Sin frameworks, máximo rendimiento
+- **Vanilla JS** - Sin frameworks
 - **JSON** - Datos estáticos
 - **AOS** - Animaciones
-- **Google Fonts** - Playfair Display & Lato
-
----
-
-## 📄 Licencia
-
-MIT License - feel free to use this project for your own perfume catalog!
-
----
-
-## 🤝 Contribuir
-
-¿Encontraste un bug? ¿Tienes una idea?
-
-1. Fork el proyecto
-2. Crea tu branch (`git checkout -b feature/amazing`)
-3. Commit tus cambios (`git commit -m 'Add amazing feature'`)
-4. Push a la branch (`git push origin feature/amazing`)
-5. Abre un Pull Request
 
 ---
 
@@ -256,8 +201,6 @@ MIT License - feel free to use this project for your own perfume catalog!
 <div align="center">
 
 **¿Interesado en un perfume?**
-
-¡Escríbenos por WhatsApp!
 
 <a href="https://wa.me/573151413120" target="_blank">
   <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
