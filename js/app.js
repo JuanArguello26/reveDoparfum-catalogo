@@ -6,8 +6,6 @@ let perfumes = [];
 let filteredPerfumes = [];
 let currentView = 'client';
 let searchTerm = '';
-let currentDecantFilter = 'Todos';
-let currentEssenceFilter = 'Todos';
 
 const WHATSAPP_NUMBER = '573151413120';
 
@@ -54,27 +52,9 @@ function showCatalogView() {
   window.scrollTo(0, 0);
 }
 
-function showDecantsView() {
-  hideAllViews();
-  document.getElementById('decants-view').classList.remove('hidden');
-  currentView = 'decants';
-  renderDecants();
-  window.scrollTo(0, 0);
-}
-
-function showEssencesView() {
-  hideAllViews();
-  document.getElementById('essences-view').classList.remove('hidden');
-  currentView = 'essences';
-  renderEssences();
-  window.scrollTo(0, 0);
-}
-
 function hideAllViews() {
   document.getElementById('client-view').classList.add('hidden');
   document.getElementById('catalog-view').classList.add('hidden');
-  document.getElementById('decants-view').classList.add('hidden');
-  document.getElementById('essences-view').classList.add('hidden');
 }
 
 // ==========================================
@@ -108,40 +88,6 @@ function renderCatalog() {
   
   container.innerHTML = filteredPerfumes.map(p => createProductCard(p)).join('');
   if (countEl) countEl.textContent = filteredPerfumes.length;
-}
-
-function renderDecants() {
-  const container = document.getElementById('decants-grid');
-  if (!container) return;
-  
-  // Filter by category
-  let decants = perfumes;
-  if (currentDecantFilter !== 'Todos') {
-    if (currentDecantFilter === 'Nicho') {
-      decants = perfumes.filter(p => p.type === 'Nicho');
-    } else {
-      decants = perfumes.filter(p => p.category === currentDecantFilter);
-    }
-  }
-  
-  container.innerHTML = decants.map(p => createProductCard(p)).join('');
-}
-
-function renderEssences() {
-  const container = document.getElementById('essences-grid');
-  if (!container) return;
-  
-  // Filter by category - essences are typically women's perfumes
-  let essences = perfumes.filter(p => p.category === 'Mujer' || p.category === 'Unisex');
-  if (currentEssenceFilter !== 'Todos') {
-    essences = essences.filter(p => p.category === currentEssenceFilter);
-  }
-  
-  if (essences.length === 0) {
-    essences = perfumes.slice(0, 6); // Fallback to show some products
-  }
-  
-  container.innerHTML = essences.map(p => createProductCard(p)).join('');
 }
 
 // ==========================================
@@ -217,20 +163,6 @@ function filterProducts(field, value) {
   }
   
   applyFilters();
-}
-
-function setDecantFilter(value, btn) {
-  currentDecantFilter = value;
-  document.querySelectorAll('.decant-cat-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderDecants();
-}
-
-function setEssenceFilter(value, btn) {
-  currentEssenceFilter = value;
-  document.querySelectorAll('.essence-cat-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderEssences();
 }
 
 // ==========================================

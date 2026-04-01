@@ -25,13 +25,13 @@
   <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
   <!-- Premium Loader -->
-  <div id="premium-loader">
-    <div class="loader-content">
-      <div class="loader-logo">RÉVE DO PARFUM</div>
-      <div class="loader-bar">
-        <div class="loader-progress"></div>
+  <div id="premium-loader" style="display: flex; align-items: center; justify-content: center;">
+    <div class="loader-content" style="text-align: center;">
+      <div class="loader-logo" style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #d4af37; letter-spacing: 4px; margin-bottom: 2rem; animation: pulse 2s ease-in-out infinite;">RÉVE DO PARFUM</div>
+      <div class="loader-bar" style="width: 200px; height: 3px; background: rgba(212, 175, 55, 0.2); border-radius: 2px; overflow: hidden; margin: 0 auto 1rem;">
+        <div class="loader-progress" style="width: 0%; height: 100%; background: linear-gradient(90deg, #d4af37, #f4d03f, #d4af37); border-radius: 2px; animation: loaderFill 3.5s ease-out forwards;"></div>
       </div>
-      <p>Cargando experiencia...</p>
+      <p style="color: #a0a0a0; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase;">Cargando experiencia...</p>
     </div>
   </div>
 
@@ -57,8 +57,6 @@
               <li><a href="#" onclick="filterProducts('category', 'Hombre'); return false;">Hombre</a></li>
               <li><a href="#" onclick="filterProducts('category', 'Mujer'); return false;">Mujer</a></li>
               <li><a href="#" onclick="filterProducts('type', 'Nicho'); return false;">Nicho</a></li>
-              <li><a href="#" onclick="showDecantsView(); return false;">Decants</a></li>
-              <li><a href="#" onclick="showEssencesView(); return false;">Esencias</a></li>
             </ul>
           </li>
           <li><a href="#" onclick="filterProducts('type', 'Nicho'); return false;">NICHO</a></li>
@@ -121,27 +119,7 @@
               <span style="font-size: 3rem;">💎</span>
             </div>
           </div>
-          <h3 class="category-title">NICHO</h3>
         </div>
-        
-        <div class="category-card" onclick="showEssencesView()">
-          <div class="category-img-container">
-            <div class="category-placeholder" style="background: linear-gradient(135deg, #2a1a2e, #3e162e);">
-              <span style="font-size: 3rem;">🌸</span>
-            </div>
-          </div>
-          <h3 class="category-title">ESENCIAS</h3>
-        </div>
-        
-        <div class="category-card" onclick="showDecantsView()">
-          <div class="category-img-container">
-            <div class="category-placeholder" style="background: linear-gradient(135deg, #2a2a1a, #3e3e16);">
-              <span style="font-size: 3rem;">🧴</span>
-            </div>
-          </div>
-          <h3 class="category-title">DECANTS</h3>
-        </div>
-      </div>
 
       <!-- Trending Section -->
       <div class="trending-section">
@@ -239,48 +217,6 @@
            <!-- Catalog Products injected here by JS -->
         </div>
       </div>
-    </div>
-  </main>
-
-  <!-- Decants View -->
-  <main id="decants-view" class="hidden" style="min-height: 100vh; padding-top: 6rem;" role="main" aria-label="Decants premium">
-    <div class="view-header">
-       <h1>Decants Premium</h1>
-       <p>Descubre la magia de la alta perfumería en formatos de viaje.</p>
-    </div>
-
-    <div class="decants-layout">
-      <div class="decants-filters">
-        <button class="decant-cat-btn active" onclick="setDecantFilter('Todos', this)">Todos</button>
-        <button class="decant-cat-btn" onclick="setDecantFilter('Hombre', this)">Hombre</button>
-        <button class="decant-cat-btn" onclick="setDecantFilter('Mujer', this)">Mujer</button>
-        <button class="decant-cat-btn" onclick="setDecantFilter('Nicho', this)">Nicho</button>
-      </div>
-      
-      <div id="decants-grid" class="decants-grid">
-           <!-- Decants Cards injected here by JS -->
-      </div>
-    </div>
-  </main>
-
-  <!-- Essences View -->
-  <main id="essences-view" class="hidden" style="min-height: 100vh; padding-top: 6rem;" role="main" aria-label="Esiencias">
-    <div class="view-header">
-       <h1>Esencias e Inspiraciones</h1>
-       <p>Inspiraciones de alta perfumería en formatos exclusivos.</p>
-    </div>
-
-    <div class="essences-layout">
-      <div class="essences-filters">
-        <button class="essence-cat-btn active" onclick="setEssenceFilter('Todos', this)">Todos</button>
-        <button class="essence-cat-btn" onclick="setEssenceFilter('Hombre', this)">Hombre</button>
-        <button class="essence-cat-btn" onclick="setEssenceFilter('Mujer', this)">Mujer</button>
-      </div>
-      
-      <div id="essences-grid" class="essences-grid">
-           <!-- Essences Cards injected here by JS -->
-      </div>
-    </div>
   </main>
 
   <!-- Main Footer -->
@@ -290,7 +226,8 @@
         <h4 class="footer-heading">RÉVE DO PARFUM</h4>
         <p class="footer-text">
           La poesía de tu presencia.<br>
-          Perfumes originales de alta gama.<br><br>
+          Perfumes de excelente calidad.<br>
+          fragrances auténticas de las mejores marcas.<br><br>
           &copy; <span id="current-year"></span> Réve do Parfum.<br>
           Todos los derechos reservados.
         </p>
